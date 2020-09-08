@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon (2).ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <title>Oliver Sibinovski - Full-Stack Web Developer</title>
+</head>
+<body>
+    <!--ScrollButtonLight-->
+    <div id="scroll-progress"></div>
+    <div id="scrollPath"></div>
+    <section>
+            <div class="side" id="side1"></div>
+            <div class="side" id="side2"></div>
+        </section>
+        <div class="top-container">
+            <h1>Hi, I'm Oliver.</h1>
+            <p>a Full-Stack Web Developer.</p>  
+          <p>based in Toronto,Canada. I have a passion for web developing and love to code..</p> 
+            <p>I'm a developer, so I know how to create your website<br> to run across devices using the latest technologies available.</p>
+        <script type="text/javascript">
+           var side1 = document.getElementById("side1")
+           window.addEventListener("scroll", function(){
+               side1.style.left = -window.pageYOffset + "px";
+           })
+           var side2 = document.getElementById("side2")
+           window.addEventListener("scroll", function(){
+               side2.style.left = window.pageYOffset + "px";
+           })
+        </script>    
+    </div>
+    <div class="middle-container">
+        <h2>MY SKILLS</h2>
+        <div class="skills">
+            <span class="Name">HTML5</span>
+            <div class="percent">
+                <div class="progress" style="width: 95%;"></div>
+            </div>
+            <span class="Value">95%</span>
+            </div>
+            <div class="skills">
+                <span class="Name">CSS3</span>
+                <div class="percent">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <span class="Value">90%</span>
+                </div>
+                <div class="skills">
+                    <span class="Name">JavaScript</span>
+                    <div class="percent">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                    <span class="Value">65%</span>
+                    </div>
+                    <div class="skills">
+                        <span class="Name">Bootstrap</span>
+                        <div class="percent">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <span class="Value">75%</span>
+                        </div>
+    </div>
+    <div class="portofolio">
+        <h2>PORTFOLIO</h2>
+        <div class="wrapper">
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images/tindog.png">
+            </div>
+        <div class="content">
+            <h2>TinDog Website</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images/COMING.png">
+            </div>
+        <div class="content">
+            <h2>TinDog Website</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images/COMING.png">
+            </div>
+        <div class="content">
+            <h2>TinDog Website</h2>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="footer-container">
+        <div id="scroll-progress"></div>
+        <div id="scrollPath"></div>
+        <script type="text/javascript">
+            let progress = document.getElementById('scroll-progress');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+            </script>
+          <h2 class="h-two-big">Get In Touch</h2 c>
+          <h3>I’m currently available for Full-Time work.</h3>
+          <p class="p-big">If you have a project that you want to get started, think you need my help<br>with something or just fancy saying hey, then get in touch.</p>
+          <a class="btn" href="mailto:olisbinovski@icloud.com">MESSAGE ME</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/oliversibinovski/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/oliverluxen">Twitter</a>
+        <a class="footer-link" href="https://github.com/oliversibin">GitHub</a>
+        <p>© 2020 Oliver Sibinovski.</p>
+      </div>
+      
+</body>
+</html>
